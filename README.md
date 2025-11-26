@@ -1,1 +1,8 @@
 # Progetto
+Prima di tutto aprire il prompt dei comandi con mysql installato e fare "mysqldump -u root -p gestioneutenti < [percorso del file .sql all'interno della repository con nome, esempio "C:\Users\jorda\Desktop\gestioneutenti.sql" così da aggiungere il database a mysql, oppure aprire mysql, fare l'accesso e creare il database "gestioneutenti", le tabelle verranno create automaticamente quando il programma verrà avviato.
+Una volta fatto ciò importare la cartella sul workspace di spring, aprire spring e aprire il progetto, fare tasto destro>run as>spring boot app.
+Dopo che il programma sarà stato inizializzato recarsi attraverso un qualsiasi browser su http://localhost:8080/gestione, si aprirà la pagina di gestione utenti dove sarà possibile cercare gli utenti, ci sono già 4 utenti caricati attraverso un file data.sql (il progetto creerà sempre la tabella del database ogni volta che viene avviato).
+Premendo su "Cerca" senza riempire i campi stamperà una tabella con tutti gli utenti nel database, altrimenti si può ricercare attraverso i vari campi della pagina.
+All'interno della tabella si potranno vedere i campi "Nome,Cognome,Codice Fiscale, Data di nascita,Azioni", azioni permette di modificare l'utente scelto(attraverso l'icona della penna) o di rimuoverlo(attraverso l'icona del cestino).
+All'inizio della pagina c'è un tasto "Aggiungi" che reindirizza ad una nuova pagina che permette di creare un nuovo utente ed aggiungerlo al database, stesso funzionamento con il tasto di modifica.
+All'interno della cartella src/test/java c'è un file junit che testa tutte le funzioni del controller che si occupa delle operazioni CRUD
