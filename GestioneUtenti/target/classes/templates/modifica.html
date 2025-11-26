@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleReg.css">
+    <title>Registrazione</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="titolo">
+            <h2>Modifica utente</h2>
+        </div>
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" th:value="${utente.nome}">
+            <label for="cognome">Cognome</label>
+            <input id="cognome" type="text" th:value="${utente.cognome}">
+            <label for="codice">Codice Fiscale</label>
+            <input id="codice" type="text" th:value="${utente.codiceFiscale}">
+            <label for="data">Data di nascita</label>
+			<input id="data" type="date" th:value="${utente.dataDiNascita}">
+            <div class="btn">
+                <button type="submit" id="modifica">Modifica</button>
+            </div>
+    </div>
+<script src="/js/modifica.js"></script>
+</body>
+
+</html>
